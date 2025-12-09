@@ -32,7 +32,6 @@ type Position struct {
 const (
 	ghostIcon  = "👻"
 	cheeseIcon = "🧀"
-	wallIcon   = "🟫"
 	emptyIcon  = "⬜"
 )
 
@@ -76,7 +75,7 @@ func main() {
 		
 		if cheeseCollected == len(maze.Cheese) {
 			fmt.Println("\n🎉 Congratulations! You collected all the cheese! 🎉")
-			fmt.Println("Ghost Mouse Boo is very happy! 👻✨")
+			fmt.Printf("Ghost Mouse %s is very happy! 👻✨\n", mouse.Name)
 			break
 		}
 
